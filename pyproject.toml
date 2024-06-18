@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "11-1 включения и генераторы"
+version = "0.1.0"
+description = ""
+authors = ["alexej <super.tebyakin68@yandex.ru>"]
+readme = "README.md"
+packages = [{include = "11"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

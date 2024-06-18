@@ -8,6 +8,6 @@
 # но только для четных чисел: [4, 6, 8, 10, 12]
 # Реализуем код задачи с использованием функций map() и filter()
 
-number = list(filter(lambda x: x % 2 == 0, [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]))
+number = list(filter(lambda x: x % 2 == 0, range(10)))
 print(list(map(lambda x: x + 2, number)))
 
