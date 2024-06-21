@@ -9,9 +9,9 @@
 def inf_seq(num=1):
     while True:
         yield num
-        num *= 2
+        num += 2
 
 
 number = inf_seq()
 print(next(number))
-
+print(next(number))
