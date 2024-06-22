@@ -194,34 +194,40 @@ filter() применяет переданную в качестве аргум�
 
 ### Примеры использования `filter()` с различными типами `iterable`:
 Список:
->numbers = [1, 2, 3, 4, 5]
->>filtered_numbers = filter(lambda x: x % 2 == 0, numbers)
->>>print(list(filtered_numbers))  # Вывод: [2, 4]
+
+    numbers = [1, 2, 3, 4, 5]
+    filtered_numbers = filter(lambda x: x % 2 == 0, numbers)
+    print(list(filtered_numbers))  # Вывод: [2, 4]
 
 Кортеж:
->numbers_tuple = (1, 2, 3, 4, 5)
->>filtered_numbers_tuple = filter(lambda x: x % 2 == 0, numbers_tuple)
->>>print(tuple(filtered_numbers_tuple))  # Вывод: (2, 4)
+
+    numbers_tuple = (1, 2, 3, 4, 5)
+    filtered_numbers_tuple = filter(lambda x: x % 2 == 0, numbers_tuple)
+    print(tuple(filtered_numbers_tuple))  # Вывод: (2, 4)
 
 Строка:
->chars = "hello"
->>filtered_chars = filter(lambda x: x in ['e', 'o'], chars)
->>>print(''.join(filtered_chars))  # Вывод: "eo"
+
+    chars = "hello"
+    filtered_chars = filter(lambda x: x in ['e', 'o'], chars)
+    print(''.join(filtered_chars))  # Вывод: "eo"
 
 Множество:
->numbers_set = {1, 2, 3, 4, 5}
->>filtered_numbers_set = filter(lambda x: x % 2 == 0, numbers_set)
->>>print(set(filtered_numbers_set))  # Вывод: {2, 4}
+
+    numbers_set = {1, 2, 3, 4, 5}
+    filtered_numbers_set = filter(lambda x: x % 2 == 0, numbers_set)
+    print(set(filtered_numbers_set))  # Вывод: {2, 4}
 
 Словарь:
->numbers_dict = {'a': 1, 'b': 2, 'c': 3}
->>filtered_values = filter(lambda x: x[1] % 2 == 0, numbers_dict.items())
->>>print(dict(filtered_values))  # Вывод: {'b': 2}
+
+    numbers_dict = {'a': 1, 'b': 2, 'c': 3}
+    filtered_values = filter(lambda x: x[1] % 2 == 0, numbers_dict.items())
+    print(dict(filtered_values))  # Вывод: {'b': 2}
 
 Диапазон:
->numbers_range = range(1, 6)
->>filtered_numbers_range = filter(lambda x: x % 2 == 0, numbers_range)
->>>print(list(filtered_numbers_range))  # Вывод: [2, 4]
+
+    numbers_range = range(1, 6)
+    filtered_numbers_range = filter(lambda x: x % 2 == 0, numbers_range)
+    print(list(filtered_numbers_range))  # Вывод: [2, 4]
 </details>
 
 
