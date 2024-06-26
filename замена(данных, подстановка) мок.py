@@ -1,3 +1,22 @@
+# Шаг 1: Исходный файл
+
+# src/generators.py
+import random
+from typing import Generator
+
+def card_number_generator(quantity: int, start: int, stop: int) -> Generator[str, None, None]:
+    for amount in range(quantity):
+        card = ""
+        for num in range(1, 17):
+            if num in [5, 9, 13]:
+                card += " "
+            card += str(random.randint(start, stop))
+        yield card
+        
+# Шаг 2: Тестовый файл
+
+# tests/test_generators.py
+
 import pytest
 from unittest.mock import patch
 from src.generators import card_number_generator
