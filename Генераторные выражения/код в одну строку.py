@@ -90,4 +90,8 @@ even_squares = [x ** 2 for x in range(10) if x % 2 == 0]
 Генераторное выражение с условием
 even_squares_gen = (x ** 2 for x in range(10) if x % 2 == 0)
 # even_squares_gen будет генератором, который генерирует 0, 4, 16, 36, 64
+=========================================================================
+random
+random_values = [random.randint(0, 9) for _ in range(5)]
+
 
