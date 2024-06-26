@@ -60,3 +60,34 @@ matching_indices = [i for i, (x, y) in enumerate([(1, 2), (4, 4), (5, 7), (0, 0)
     if x == y — условие, фильтрующее пары с одинаковыми элементами.
 ======================================================================================================
 
+алгоритм написания
+Списковое включение (list comprehension):
+[expression for item in iterable if condition]
+
+squares = [x ** 2 for x in range(10) if x % 2 == 0]
+# squares будет содержать [0, 4, 16, 36, 64]
+============================================
+Включение множества (set comprehension):
+{expression for item in iterable if condition}
+
+unique_squares = {x ** 2 for x in range(10) if x % 2 == 0}
+# unique_squares будет содержать {0, 4, 16, 36, 64}
+===================================================
+Включение словаря (dict comprehension):
+{key_expression: value_expression for item in iterable if condition}
+square_dict = {x: x ** 2 for x in range(10) if x % 2 == 0}
+# square_dict будет содержать {0: 0, 2: 4, 4: 16, 6: 36, 8: 64}
+===============================================================
+Генераторное выражение (generator expression):
+(expression for item in iterable if condition)
+squares_gen = (x ** 2 for x in range(10) if x % 2 == 0)
+# squares_gen будет генератором, который генерирует 0, 4, 16, 36, 64
+====================================================================
+Примеры синтаксиса с условием:
+Списковое включение с условием
+even_squares = [x ** 2 for x in range(10) if x % 2 == 0]
+# even_squares будет содержать [0, 4, 16, 36, 64]
+Генераторное выражение с условием
+even_squares_gen = (x ** 2 for x in range(10) if x % 2 == 0)
+# even_squares_gen будет генератором, который генерирует 0, 4, 16, 36, 64
+
