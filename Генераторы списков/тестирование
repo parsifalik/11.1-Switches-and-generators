@@ -1,0 +1,7 @@
+Если вы ещё не сгенерировали HTML-отчет, выполните команду:
+  coverage html
+Это создаст папку htmlcov в текущем каталоге.
+Открытие HTML-отчета:
+open htmlcov/index.html  # для macOS
+xdg-open htmlcov/index.html  # для Linux
+start htmlcov/index.html  # для Windows
